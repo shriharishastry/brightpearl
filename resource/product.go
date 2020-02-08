@@ -1,7 +1,16 @@
 package resource
 
-type ProductResource struct {
+import (
+	"fmt"
+	"github.com/shriharishastry/brightpearl-golang/connector"
+	"log"
+	"net/http"
+	"net/url"
+)
 
+type ProductResource struct {
+	resourceUrl string
+	connection connector.HttpClient
 }
 
 type Product struct{
@@ -10,12 +19,20 @@ type Product struct{
 
 
 func (p *ProductResource) GetAll(){
-
+	rsp, err := p.connection.SendRequest(http.MethodGet, c.resourceUrl, url.Values{}, http.Header{})
+	if err != nil{
+		log.Fatal(err)
+	}
+	fmt.Println(rsp)
 }
 
 
 func (p *ProductResource) Get(){
-
+	rsp, err := c.connection.SendRequest(http.MethodGet, c.resourceUrl, url.Values{}, http.Header{})
+	if err != nil{
+		log.Fatal(err)
+	}
+	fmt.Println(rsp)
 }
 
 func (p *ProductResource) Create()  {

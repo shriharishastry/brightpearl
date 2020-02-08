@@ -59,9 +59,9 @@ func (c *HttpClient) SendRequest(method string, rURL string, params url.Values, 
 	return resp, nil
 
 }
-
-func (c *HttpClient) SendAndProcessRequest(method string, rURL string, params url.Values, headers http.Header, dataObj interface{}) error{
-		resp, err := c.SendRequest(method, rURL, params, headers)
-
-
-}
+//
+//func (c *HttpClient) SendAndProcessRequest(method string, rURL string, params url.Values, headers http.Header, dataObj interface{}) error{
+//		resp, err := c.SendRequest(method, rURL, params, headers)
+//
+//
+//}
