@@ -8,6 +8,7 @@ import (
 	"net/url"
 )
 
+
 type ProductResource struct {
 	resourceUrl string
 	connection connector.HttpClient
@@ -16,7 +17,6 @@ type ProductResource struct {
 type Product struct{
 	ProductName string `json:"product_name"`
 }
-
 
 func (p *ProductResource) GetAll(){
 	rsp, err := p.connection.SendRequest(http.MethodGet, c.resourceUrl, url.Values{}, http.Header{})
