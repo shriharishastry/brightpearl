@@ -2,7 +2,7 @@ package resource
 
 import (
 	"fmt"
-	"github.com/shriharishastry/brightpearl-golang/connector"
+	"github.com/shriharishastry/brightpearl/connector"
 	"log"
 	"net/http"
 	"net/url"
@@ -18,7 +18,7 @@ type Category struct{
 }
 
 
-func (c *CategoryResource) GetAll() []Category{
+func (c *CategoryResource) GetAll(){
 	categories := []Category{}
 	fmt.Println(categories)
 	rsp, err := c.connection.SendRequest(http.MethodGet, c.resourceUrl, url.Values{}, http.Header{})

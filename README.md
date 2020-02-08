@@ -15,6 +15,10 @@ package main
 import (
 	"fmt"
 
-	"github.com/shriharishastry/brightpearl-golang"
+	"github.com/shriharishastry/brightpearl"
 )
+
+func main(){
+    apiInstance = 
+}
 ```

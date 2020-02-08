@@ -1,9 +1,8 @@
 package brightpearl
 
-
 import (
 "fmt"
-"github.com/shriharishastry/brightpearl-golang/connector"
+"github.com/shriharishastry/brightpearl/connector"
 "net/http"
 "net/url"
 "time"

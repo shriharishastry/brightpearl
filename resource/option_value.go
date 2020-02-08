@@ -1,6 +1,6 @@
 package resource
 
-import "github.com/shriharishastry/brightpearl-golang/connector"
+import "github.com/shriharishastry/brightpearl/connector"
 
 type OptionValueResource struct {
 	resourceUrl string

@@ -2,7 +2,7 @@ package resource
 
 import (
 	"fmt"
-	"github.com/shriharishastry/brightpearl-golang/connector"
+	"github.com/shriharishastry/brightpearl/connector"
 	"log"
 	"net/http"
 	"net/url"
